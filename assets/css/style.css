@@ -38,6 +38,19 @@ body {
 
 }
 
+/* --  Progress bar -- */
+
+.progressBar {
+    width: 100%;
+    background-color: grey;
+}
+  
+.statusBar {
+    width: 10%;
+    height: 30px;
+    background-color: #e8889d;
+}
+
 /* -- For media queries -- */
 
 @media (max-width: 600px) {
