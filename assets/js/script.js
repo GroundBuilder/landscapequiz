@@ -6,16 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", funtion(){
-            if (this.gettAttribute("data-type") === "submit"){
-                alert("You have klicked on a button");
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "close-game") {
+                alert("You clicked close game!");
             } else {
                 let gameType = this.getAttribute("data-type");
                 alert(`You clicked ${gameType}`);
             }
-        })
+        });
     }
-} ) 
+});
+
 
 function runGame() {
 
