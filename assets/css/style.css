@@ -10,6 +10,11 @@ body {
 
 /* -- Game area layout --*/
 
+.game-background {
+    background: url(../images/sverige_map.png) no-repeat center center;
+
+}
+
 .game-area {
     background-color: #efbfc9;
     margin-right: auto;
@@ -26,8 +31,10 @@ body {
     height: 50px;
     color: white;
     border-radius: 5px;
-    border: 15px;
+    border: 5px solid;
     border-color: #e8889d;
+    padding: 15px;
+    margin: 5px;
 
 }
 
@@ -42,6 +49,10 @@ body {
         height: 70vh;
     }
 
+    .heading {
+        line-height: 0px;
+    }
+
 }
 
 @media (max-width: 380px) {
@@ -52,4 +63,7 @@ body {
         height: 75vh;
     }
 
+    .heading {
+        line-height: 0px;
+    }
 }
