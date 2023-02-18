@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function runGame() {
-
+    displayScenario('starthere');
 }
 
 function checkAnswers() {
@@ -42,9 +42,51 @@ function displayQuizQuestion() {
 
 }
 
+function displayScenario (scenarioIndex) {
+        let scenario = scenarios.find(scenario => scenario.id === scenarioIndex);
+}
 function restarButton() {
 
 }
 
 
 // Creat an array to hold the picture and qusetion and answers.
+
+let scenarios = [
+    {
+        id: 'starthere',
+        background: "url('../images/upplands_vapen.svg.png')",
+        message: "Picture this. It's a beautiful sunny day. You have no plans or responsibilities. Life is good. You decide to go to the zoo. What could go wrong?", 
+        response: [
+            {
+                option: "Uppland",
+                getTo: 1
+            },
+        ],
+    },
+    {
+        id: 1,
+        message: `Witch landscape does this shield belong to?`,
+        background: "url('../images/vastmanlands_vapen.svg.png')",
+        response: [
+            {
+                option: "Gastrikland",
+                getTo: 2
+            },
+            {
+                option: "Vastmanland",
+                getTo: 3
+            },
+            {
+                option: "Uppland",
+                getTo: 2
+            },
+            {
+                option: "Norrbotten",
+                getTo: 3
+            },
+        ],
+    },
+]
+
+runGame();
