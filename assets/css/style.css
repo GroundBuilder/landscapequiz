@@ -29,7 +29,7 @@ body {
 .btn {
     width: 300px;
     height: 50px;
-    color: white;
+    color: black;
     border-radius: 5px;
     border: 5px solid;
     border-color: #e8889d;
@@ -38,12 +38,19 @@ body {
 
 }
 
+.btn:hover {
+    background-color: #efbfc9;
+    color: black;
+}
+
 .x-btn {
     float: right;
     width: 40px;
     height: 40px;
     border: none;
     padding: 5px;
+    color: black;
+    background-color: #e8889d;
 }
 
 /* --  Progress bar -- */
