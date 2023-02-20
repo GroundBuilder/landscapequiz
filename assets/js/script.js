@@ -3,7 +3,7 @@ console.log("Connected to the index.html")
 //Get the answer button elements nad add event listeners to them.
 
 document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+    let buttons = document.getElementsByTagName("buttons");
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+const showrules = document.getElementsByClassName(".start_quiz_btn button");
+const info_box = document.getElementsByClassName(".quiz_info_box")
+
+showrules.oncklick = () => {
+    info_box.classList.add("activeInfo");
+
+}
 
 function runGame() {
     displayScenario('starthere');
