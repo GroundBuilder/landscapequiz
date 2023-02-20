@@ -191,6 +191,16 @@ body {
     margin: 10px;
 }
 
+.restart, .exit {
+    color:black;
+    background-color: #f6f6f6;
+
+}
+
+.restart, .exit :hover {
+    background-color: #e8889d;
+}
+
 
 /* -- For media queries -- */
 
