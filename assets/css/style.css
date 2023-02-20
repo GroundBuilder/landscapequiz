@@ -7,7 +7,7 @@ body {
 
 
 .heading {
-    line-height: 50px;
+    line-height: 1vh;
 }
 
 /* -- Game area layout --*/
@@ -55,6 +55,16 @@ body {
     color: black;
 }
 
+.start_quiz_btn {
+    font-size: 25px;
+    font-weight: bold;
+    color:#e8889d;
+    padding: 10px 30px;
+    border: none;
+    background: #f6f6f6;
+
+}
+
 .x-btn {
     float: right;
     width: 40px;
@@ -70,8 +80,60 @@ body {
     opacity: 1 ;
     z-index: 5;
     pointer-events: auto; 
-    transform: translate(-50%, -50%) scale(1;)
+    transform: translate(-50%, -50%) scale(1);
 }
+
+.quiz_info_box{
+    width: 500px;
+    background: #f6f6f6;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+}
+
+.game-area {
+    width: 450px;
+    background: #f6f6f6;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+
+
+.quiz_info_box .quiz_rules_info {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0 ;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quiz_rules_info p {
+    padding: 50px;
+}
+
+.quiz_rules_info span {
+    font-weight: 900;
+    color: #e8889d;
+}
+
+.start_btn_quiz {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid black;
+}
+
+
 
 /* --  Progress bar -- */
 
