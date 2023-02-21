@@ -40,7 +40,7 @@
     <div class="quiz_info_box">
         <div class="quiz_rules_info"><span>Quiz game rules:</span></div>
         <p>Have fun and answer right. Love is everything!</p>
-        <button class="start_btn_quiz">Start Quiz</button>
+        <button data-type="startquiz" class="btn start_btn_quiz">Begin Quiz</button>
     </div>
     
     <!-- Quiz game area -->
@@ -75,20 +75,15 @@
     </div>
 
     <!-- Score box -->
-    <div class="score_box">
-        <div class="score_box">
-            <div class="icon">
-                <i class="fa-crown"></i>
-            </div>
+    <div class="score_box">  
             <div class="text_completed">Congrat's, you have finish this Quiz!</div>
             <div class="reslut_text">
                 <!-- Put the score result in here: -->
             </div>
             <div class="buttons">
-                <button class="btn restart">Play Again</button>
-                <button class="btn quit">Quit Quiz</button>
+                <button data-type="startquiz" class="btn restart">Play Again</button>
+                <button data-type="quitquiz" class="btn quit">Quit Quiz</button>
             </div>
-        </div>
     </div>
     
     <!-- Footer -->

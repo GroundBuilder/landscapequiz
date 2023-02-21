@@ -18,22 +18,22 @@ body {
 }
 
 .game-area {
-    background-color: #efbfc9;
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
-    max-width: 800px;
+    display: none;
+    /*background-color: #efbfc9;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*width: 90%;*/
+    /*max-width: 800px;*/
 
-}
+} 
 
 
 /* --  Buttons -- */
 
 .start_quiz_btn, .quiz_info_box, .game-area, .score_box {
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0 5px 10px 0 black, 0 7px 20px 0 black;
                
 
@@ -79,28 +79,26 @@ body {
 /* -- Make the box active and dissapear -- */
 .quiz_info_box.activeInfo, .game-area.activeGame, .score_box.activeScroe {
     opacity: 1 ;
-    z-index: 5;
+    /*z-index: 5;*/
     pointer-events: auto; 
-    transform: translate(-50%, -50%) scale(1);
 }
 
 .quiz_info_box{
-    width: 500px;
+    display: none;
+    /*width: 500px;*/
     background: #f6f6f6;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(0.9);
     opacity: 1;
     transition: all 0.3s ease-in;
 
 }
 
 .game-area {
-    width: 450px;
+    /*width: 450px;*/
     background: #f6f6f6;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(0.9);
     opacity: 1;
-    transition: all 0.3s ease-in;
+    /*transition: all 0.3s ease-in;*/
 }
 
 
@@ -109,7 +107,7 @@ body {
     height: 60px;
     width: 100%;
     border-bottom: 1px solid black;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     padding: 0 30px;
     border-radius: 5px 5px 0 0 ;
@@ -128,28 +126,25 @@ body {
 
 .start_btn_quiz {
     height: 50px;
-    display: flex;
+    /*display: flex;*/
     justify-content: flex-end;
     padding: 0 30px;
     border-top: 1px solid black;
 }
 
 .game-area h2 {
-    position: relative;
-    z-index: 2;
+    /*position: relative;*/
+    /*z-index: 2;*/
     padding: 0 30px;
     height: 70px;
     background: #f6f6f6;
     border-radius: 5px 5px 0 0;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 3px 5px 1px black;
 }
 
-.game-area {
-    display: none;
-}
 
 
 /* --  Progress bar -- */
@@ -170,13 +165,12 @@ body {
 }
 
 .score_box {
+    display: none;
     background: #f6f6f6;
-    display: flex;
+    /*display: flex;*/
     padding: 25px 30px;
     opacity: 1;
     align-items: center;
-    transform: translate(-50%, -50%) scale(0.9);
-    transition: all 0.3s ease-in;
 }
 
 /* -- Result wiev -- */
