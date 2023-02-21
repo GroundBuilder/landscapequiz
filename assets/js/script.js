@@ -1,4 +1,4 @@
-console.log("Connected to the index.html")
+/*console.log("Connected to the index.html")
 // Wait for the DOM to finish loading before running the game.
 //Get the answer button elements and add event listeners to them.
 
@@ -15,11 +15,24 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-});
+});*/
 // --  w3school modal
 let beginning = document.getElementsByClassName("quiz_info_box");
-let openRules = document.getElementsByClassName("beginning");
-let 
+let btnOpenRules = document.getElementsByClassName("beginning");
+let viewRules = document.getElementsByClassName("quiz_rule_info")[0];
+
+btnOpenRules.onclick = function() {
+    beginning.style.display = "block";
+}
+
+viewRules.onclick = function() {
+    beginning.style.display = "none";
+}
+
+
+
+
+
 
 const showrules = document.getElementsByClassName(".start_quiz_btn button");
 const info_box = document.getElementsByClassName(".quiz_info_box")
