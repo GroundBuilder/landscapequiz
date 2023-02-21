@@ -4,8 +4,6 @@ body {
 
 }
 
-
-
 .heading {
     font-size: 1rem;
 }
@@ -17,7 +15,24 @@ body {
 
 }
 
-.game-area {
+.quiz_info_box{
+    display: none;
+    /*width: 500px;*/
+    background: #f6f6f6;
+    border-radius: 5px;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+.game_area_box {
+    /*width: 450px;*/
+    background: #f6f6f6;
+    border-radius: 5px;
+    opacity: 1;
+    /*transition: all 0.3s ease-in;*/
+}
+
+.game_area_box {
     display: none;
     /*background-color: #efbfc9;*/
     /*margin-right: auto;*/
@@ -27,10 +42,32 @@ body {
 
 } 
 
+.score_box {
+    display: none;
+    background: #f6f6f6;
+    /*display: flex;*/
+    padding: 25px 30px;
+    opacity: 1;
+    align-items: center;
+}
+
+
+.game_area_ h2 {
+    /*position: relative;*/
+    /*z-index: 2;*/
+    padding: 0 30px;
+    height: 70px;
+    background: #f6f6f6;
+    border-radius: 5px 5px 0 0;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px black;
+}
 
 /* --  Buttons -- */
 
-.start_quiz_btn, .quiz_info_box, .game-area, .score_box {
+.start_quiz_btn, .quiz_info_box, .game_area_box, .score_box {
     /*position: absolute;*/
     top: 50%;
     left: 50%;
@@ -77,31 +114,11 @@ body {
 }
 
 /* -- Make the box active and dissapear -- */
-.quiz_info_box.activeInfo, .game-area.activeGame, .score_box.activeScroe {
+.quiz_info_box.activeInfo, .game_area_box.activeGame, .score_box.activeScroe {
     opacity: 1 ;
     /*z-index: 5;*/
     pointer-events: auto; 
 }
-
-.quiz_info_box{
-    display: none;
-    /*width: 500px;*/
-    background: #f6f6f6;
-    border-radius: 5px;
-    opacity: 1;
-    transition: all 0.3s ease-in;
-
-}
-
-.game-area {
-    /*width: 450px;*/
-    background: #f6f6f6;
-    border-radius: 5px;
-    opacity: 1;
-    /*transition: all 0.3s ease-in;*/
-}
-
-
 
 .quiz_info_box .quiz_rules_info {
     height: 60px;
@@ -132,21 +149,6 @@ body {
     border-top: 1px solid black;
 }
 
-.game-area h2 {
-    /*position: relative;*/
-    /*z-index: 2;*/
-    padding: 0 30px;
-    height: 70px;
-    background: #f6f6f6;
-    border-radius: 5px 5px 0 0;
-    /*display: flex;*/
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 3px 5px 1px black;
-}
-
-
-
 /* --  Progress bar -- */
 
 .progressBar {
@@ -164,14 +166,6 @@ body {
     user-select: none;
 }
 
-.score_box {
-    display: none;
-    background: #f6f6f6;
-    /*display: flex;*/
-    padding: 25px 30px;
-    opacity: 1;
-    align-items: center;
-}
 
 /* -- Result wiev -- */
 
@@ -203,7 +197,7 @@ body {
         padding: 20px;
     }
 
-    .game-area {
+    .game_area_box {
         height: 70vh;
     }
 
@@ -217,7 +211,7 @@ body {
     body {
         padding: 10px;
     }
-    .game-area {
+    .game_area_box {
         height: 75vh;
     }
 
