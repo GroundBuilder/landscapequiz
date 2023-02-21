@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+// --  w3school modal
+let beginning = document.getElementsByClassName("quiz_info_box");
+let openRules = document.getElementsByClassName("beginning");
+let 
 
 const showrules = document.getElementsByClassName(".start_quiz_btn button");
 const info_box = document.getElementsByClassName(".quiz_info_box")
