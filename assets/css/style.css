@@ -89,7 +89,7 @@ body {
     background: #f6f6f6;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3s ease-in;
 
 }
@@ -99,7 +99,7 @@ body {
     background: #f6f6f6;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3s ease-in;
 }
 
@@ -173,7 +173,7 @@ body {
     background: #f6f6f6;
     display: flex;
     padding: 25px 30px;
-    opacity: 0;
+    opacity: 1;
     align-items: center;
     transform: translate(-50%, -50%) scale(0.9);
     transition: all 0.3s ease-in;
