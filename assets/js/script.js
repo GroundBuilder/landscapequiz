@@ -98,7 +98,7 @@ let scenarios = [
     {
         id: 1,
         question: "Witch landscape does this shield belong to?", 
-        background: "url('assets/images/upplands_vapen.svg.png')",
+        background: "url('../images/upplands_vapen.png')",
         response: [
             {
                 option: "Uppland",
@@ -121,7 +121,7 @@ let scenarios = [
     {
         id: 2,
         question: `Witch landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.svg.png')",
+        background: "url('assets/images/vastmanlands_vapen.png')",
         response: [
             {
                 option: "Gastrikland",
