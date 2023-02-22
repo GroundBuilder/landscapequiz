@@ -213,69 +213,69 @@ let scenarios = [
     {
         id: 6,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "url('../images/vastergotlands_vapen.png')",
         response: [
             {
-                option: "Gastrikland",
-                getTo: 2
+                option: "Vastergotland",
+                getTo: 7
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                getTo: 1
             },
             {
                 option: "Uppland",
-                getTo: 2
+                getTo: 1
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                getTo: 1
             },
         ],
     },
     {
         id: 7,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "url('../images/vasterbottens_vapen.png')",
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                getTo: 1
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                getTo: 1
             },
             {
                 option: "Uppland",
-                getTo: 2
+                getTo: 1
             },
             {
-                option: "Norrbotten",
-                getTo: 3
+                option: "Vasterbotten",
+                getTo: 8
             },
         ],
     },
     {
         id: 8,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "url('../images/sodermanlands_vapen.png')",
         response: [
             {
-                option: "Gastrikland",
-                getTo: 2
+                option: "Sodermanland",
+                getTo: 9
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                getTo: 1
             },
             {
                 option: "Uppland",
-                getTo: 2
+                getTo: 1
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                getTo: 1
             },
         ],
     },
