@@ -25,7 +25,7 @@ body {
 }
 
 .game_area_box {
-    display: none;
+    display: block;
     z-index: 1;
     /*width: 450px;*/
     background: #f6f6f6;
@@ -120,6 +120,10 @@ body {
     /*z-index: 5;*/
     pointer-events: auto; 
 }
+
+#quiz_img {
+    background-image: url();
+}   
 
 .quiz_info_box .quiz_rules_info {
     height: 60px;

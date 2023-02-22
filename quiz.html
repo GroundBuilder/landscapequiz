@@ -33,43 +33,35 @@
    
     <!-- Start quiz game button -->
     <div class="start_quiz_btn">
-        <button id="open_rules_btn" class="beginning" data-type="Start quiz button">Start Quiz</button>
-    </div>
-
-    <!-- Quiz game rules -->
-    <div id="quiz_info_box" class="quiz_info_box">
-        <div class="quiz_rules_info">Quiz game rules:</div>
-            <p>You will see 10 different landscape shields. Your task is to klick on the right landscape. You will get 4 options, only one is right. There is total 25 differens landscape in Sweden with its own landscape shield.</p>
-        <button data-type="startquiz" id="start_btn_quiz" class="btn start_btn_quiz">Close</button>
+        <button id="open_quiz_btn" class="beginning" data-type="Start quiz button">Start Quiz</button>
     </div>
     
     <!-- Quiz game area -->
-    <div id="" class="game_area_box">
-        <button data-type="close-game" class="btn x-btn quit">X
-        </button>
-        <p><h2>Sweden Quiz game</h2></p>
-        <p class="pic-shields"><h2>Quiz picture here</h2><img src="" alt="" class="game-img shield-quiz"></p>
-        <button data-type="answer1" class="btn game_btn question-1">1
-        </button>
+    <div id="game_area_box" class="game_area_box">
+        <div id="game_box" class="game_box"></div>
+            <button data-type="close-game" class="btn x-btn quit">&times;</button>
+            <p><h2>Sweden Quiz game</h2></p>
+            <p id="quiz_img" class="pic-shields"><h2>Quiz picture here</h2><img src="" alt="" class="game-img shield-quiz"></p>
+            
+            <div id="btn_holder" class="btn_holder">
+                <button data-type="answer1" class="btn game_btn question-1">1</button>
 
-        <button data-type="answer2" class="btn game_btn question-2">2
-        </button>
+                <button data-type="answer2" class="btn game_btn question-2">2</button>
 
-        <button data-type="answer3" class="btn game_btn question-3">3
-        </button>
+                <button data-type="answer3" class="btn game_btn question-3">3</button>
 
-        <button data-type="answer4" class="btn game_btn question-4">4
-        </button>
-
-        <!-- Status bar for user to see how she/he has left -->
-        <div class="progressBar">
-            <p class="statusBar"></p>
+                <button data-type="answer4" class="btn game_btn question-4">4</button>
+            </div>
+            <!-- Status bar for user to see how she/he has left -->
+            <div class="progressBar">
+                <p class="statusBar"></p>
+            </div>
         </div>
 
     </div>
 
     <!-- Score box -->
-    <div class="score_box">  
+    <div id="score_box" class="score_box">  
             <div class="text_completed">Congrat's, you have finish this Quiz!</div>
             <div class="reslut_text">
                 <!-- Put the score result in here: -->
@@ -81,7 +73,7 @@
     </div>
 
     <div id="score-area">
-        <div class="score_box">
+        <div class="score_area_box">
             <p class="scores">Correct answers: <span id="score">0</span></p>
             <p class="scores">Incorrect answers: <span id="incorrect">0</span></p>
         </div>

@@ -20,17 +20,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-const showrules = document.getElementsByClassName(".start_quiz_btn button");
-const info_box = document.getElementsByClassName(".quiz_info_box")
+const info_box = document.getElementsById("quiz_info_box");
+let quizText = document.getElementById("game_box");
+let quizButton = document.getElementById("btn_holder");
+let bgImage = document.getElementById("quiz_img");
 
-showrules.oncklick = () => {
-    info_box.classList.add("activeInfo");
-
+let startQuiz = document.getElementById('open_quiz_btn');
+startQuiz.onclick = function runGame() {
+    
 }
+
 
 function runGame() {
-    displayScenario('starthere');
+    displayQuiz(1);
+
 }
+
 
 function checkAnswers() {
 
@@ -52,10 +57,37 @@ function displayQuizQuestion() {
 
 }
 
-function displayScenario (scenarioIndex) {
-        let scenario = scenarios.find(scenario => scenario.id === scenarioIndex);
+function displayQuiz (scenarioIndex) {
+    let quiz = scenarios.find(quiz => quiz.id === scenarioIndex);
+    
+    quizText.quizContent = quiz.question;
+
+    bgImage.style.backgroundImage = quiz.background;
+
+    while (quizButton.firstChild) {
+        quizButton.removeChild(quizButton.firstChild);
+    }
+
+    quiz.response.forEach(respond => {
+        
+        let quizButtons = document.createElement('button');
+        
+        quizButtons.textContent = respond.question;
+        
+        quizButtons.classList.add('btn');
+        
+        quizButtons.addEventListener('click', () => optionResponse(respond));
+        
+        quizButton.appendChild(quizButtons);
+    })
+
 }
 function restarButton() {
+
+}
+
+
+function optionResponse (respond) {
 
 }
 
@@ -64,20 +96,32 @@ function restarButton() {
 
 let scenarios = [
     {
-        id: 'starthere',
-        background: "url('../images/upplands_vapen.svg.png')",
-        message: "Picture this. It's a beautiful sunny day. You have no plans or responsibilities. Life is good. You decide to go to the zoo. What could go wrong?", 
+        id: 1,
+        question: "Witch landscape does this shield belong to?", 
+        background: "url('assets/images/upplands_vapen.svg.png')",
         response: [
             {
                 option: "Uppland",
                 getTo: 1
             },
+            {
+                option: "Vastmanland",
+                getTo: 3
+            },
+            {
+                option: "Uppland",
+                getTo: 2
+            },
+            {
+                option: "Norrbotten",
+                getTo: 3
+            },
         ],
     },
     {
-        id: 1,
-        message: `Witch landscape does this shield belong to?`,
-        background: "url('../images/vastmanlands_vapen.svg.png')",
+        id: 2,
+        question: `Witch landscape does this shield belong to?`,
+        background: "url('assets/images/vastmanlands_vapen.svg.png')",
         response: [
             {
                 option: "Gastrikland",
