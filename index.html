@@ -24,23 +24,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>LandscapeQuiz</title>
 </head>
-<body class="game-background">
+<body id="game_background" class="game-background">
     <header>
         <a href="index.html"><img class="logo" src="assets/images/logo.png" alt="logo">
             <h1 class="heading">LandscapeQuiz</h1>
         </a>
     </header>
-    
+   
     <!-- Start quiz game button -->
     <div class="start_quiz_btn">
-        <button class="beginning" data-type="Start quiz button">Start Quiz</button>
+        <button id="open_rules_btn" class="beginning" data-type="Start quiz button">Start Quiz</button>
     </div>
 
     <!-- Quiz game rules -->
-    <div class="quiz_info_box">
+    <div id="quiz_info_box" class="quiz_info_box">
         <div class="quiz_rules_info"><span>Quiz game rules:</span></div>
         <p>Have fun and answer right. Love is everything!</p>
-        <button data-type="startquiz" class="btn start_btn_quiz">Begin Quiz</button>
+        <button data-type="startquiz" id="start_btn_quiz" class="btn start_btn_quiz">Begin Quiz</button>
     </div>
     
     <!-- Quiz game area -->
