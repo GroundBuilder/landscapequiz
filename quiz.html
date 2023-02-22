@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quizgame of lanscape shield in Sweden!">
+    <meta name="keywords" content="shield, quiz, landscape, landscapequiz, sweden">
+
+    <!-- Fonte awsome -->
+    <script src="https://kit.fontawesome.com/02d1f83f71.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Overpass:wght@300&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-32x32.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+<!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LandscapeQuiz</title>
+</head>
+<body id="game_background" class="game-background">
+    <header>
+        <a href="index.html"><img class="logo" src="assets/images/logo.png" alt="logo">
+            <h1 class="heading">LandscapeQuiz</h1>
+        </a>
+    </header>
+   
+    <!-- Start quiz game button -->
+    <div class="start_quiz_btn">
+        <button id="open_rules_btn" class="beginning" data-type="Start quiz button">Quiz rules</button>
+    </div>
+
+    <!-- Quiz game rules -->
+    <div id="quiz_info_box" class="quiz_info_box">
+        <div class="quiz_rules_info">Quiz game rules:</div>
+            <p>You will see 10 different landscape shields. Your task is to klick on the right landscape. You will get 4 options, only one is right. There is total 25 differens landscape in Sweden with its own landscape shield.</p>
+        <button data-type="startquiz" id="start_btn_quiz" class="btn start_btn_quiz">Close</button>
+    </div>
+    
+    <!-- Quiz game area -->
+    <div id="" class="game_area_box">
+        <button data-type="close-game" class="btn x-btn quit">X
+        </button>
+        <p><h2>Sweden Quiz game</h2></p>
+        <p class="pic-shields"><h2>Quiz picture here</h2><img src="" alt="" class="game-img shield-quiz"></p>
+        <button data-type="answer1" class="btn game_btn question-1">1
+        </button>
+
+        <button data-type="answer2" class="btn game_btn question-2">2
+        </button>
+
+        <button data-type="answer3" class="btn game_btn question-3">3
+        </button>
+
+        <button data-type="answer4" class="btn game_btn question-4">4
+        </button>
+
+        <!-- Status bar for user to see how she/he has left -->
+        <div class="progressBar">
+            <p class="statusBar"></p>
+        </div>
+
+    </div>
+
+    <!-- Score box -->
+    <div class="score_box">  
+            <div class="text_completed">Congrat's, you have finish this Quiz!</div>
+            <div class="reslut_text">
+                <!-- Put the score result in here: -->
+            </div>
+            <div class="buttons">
+                <button data-type="startquiz" class="btn restart">Play Again</button>
+                <button data-type="quitquiz" class="btn quit">Quit Quiz</button>
+            </div>
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Correct answers: <span id="score">0</span></p>
+        <p class="scores">Incorrect answers: <span id="incorrect">0</span></p>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul id="icons">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram account  (opens in a new tab)"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter account  (opens in a new tab)"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page  (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
