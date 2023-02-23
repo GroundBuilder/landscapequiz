@@ -114,6 +114,10 @@ body {
     background-color: #e8889d;
 }
 
+footer nav ul li {
+    list-style-type: none;
+}
+
 /* -- Make the box active and dissapear -- */
 .quiz_info_box.activeInfo, .game_area_box.activeGame, .score_box.activeScroe {
     opacity: 1 ;
