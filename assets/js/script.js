@@ -87,10 +87,39 @@ function restarButton() {
 }
 
 
-function optionResponse (respond) {
-
+function optionResponse(respond) {
+    // -- If  no outcome, just change to the clicked scenario
+    if (respond.outcome == null) {
+        displayScenario(respond.getTo);
+    //if you pick a winning out
+    } else if (respond.outcome == "score") {
+        // Increase the value of the winning score
+        addWin();
+        // Store the new value for wins in local storage
+        storeScores();
+        // Move to the chosen scenario
+        displayScenario(respond.getTo);
+    // If you pick a losing outcome
+    } else if (respond.outcome == "lose") {
+        //Increase the loss score by 1
+        addLoss();
+        // Store the new value for losses in local storage
+        storeScores();
+        // Move to the chosen scenario
+        displayScenario(respond.goTo);
+    }
 }
 
+function addWin() {
+    let oldWin = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++oldWin;
+}
+
+
+function addLoss() {
+    let oldLoss = parseInt(document.getElementById('lose').innerText);
+    document.getElementById('lose').innerText = ++oldLoss;
+}
 
 // Creat an array to hold the picture and qusetion and answers.
 
@@ -101,20 +130,24 @@ let scenarios = [
         background: "url('assets/images/upplands_vapen.png')",
         response: [
             {
-                option: "Uppland",
-                getTo: 2
+                option: "Sordermanland",
+                outcome: 'lose',
+                getTo: 1,
             },
             {
                 option: "Vastmanland",
-                getTo: 1
+                outcome: 'lose',
+                getTo: 1,
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'score',
+                getTo: 2,
             },
             {
                 option: "Norrbotten",
-                getTo: 1
+                outcome: 'lose',
+                getTo: 1,
             },
         ],
     },
@@ -125,19 +158,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 1
+                outcome: 'lose',
+                getTo: 1,
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'score',
+                getTo: 3,
             },
             {
                 option: "Uppland",
-                getTo: 1
+                outcome: 'lose',
+                getTo: 1,
             },
             {
                 option: "Norrbotten",
-                getTo: 1
+                outcome: 'lose',
+                getTo: 1,
             },
         ],
     },
