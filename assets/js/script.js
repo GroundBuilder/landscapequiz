@@ -88,25 +88,25 @@ function restarButton() {
 
 
 function optionResponse(respond) {
-    // -- If  no outcome, just change to the clicked scenario
+    // -- If  there is no outcome, just change to the clicked quiz
     if (respond.outcome == null) {
-        displayScenario(respond.getTo);
-    //if you pick a winning out
+        displayQuiz(respond.getTo);
+    // -- If you pick a winning out
     } else if (respond.outcome == "score") {
-        // Increase the value of the winning score
+        // -- Increase the value of the winning score
         addWin();
-        // Store the new value for wins in local storage
+        // -- Store the new value for wins in local storage
         storeScores();
-        // Move to the chosen scenario
-        displayScenario(respond.getTo);
-    // If you pick a losing outcome
+        // -- Move to the next quiz
+        displayQuiz(respond.getTo);
+    // -- If you pick a losing outcome
     } else if (respond.outcome == "lose") {
-        //Increase the loss score by 1
+        // -- Increase the loss score by 1
         addLoss();
-        // Store the new value for losses in local storage
+        // -- Store the new value for losses in a local storage
         storeScores();
-        // Move to the chosen scenario
-        displayScenario(respond.goTo);
+        // -- Go to the next quiz
+        displayQuiz(respond.goTo);
     }
 }
 
@@ -120,6 +120,24 @@ function addLoss() {
     let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
 }
+
+function storeScores() {
+    localStorage.setItem('scores', document.getElementById('score').innerText);
+    localStorage.setItem('losses', document.getElementById('lose').innerText);
+}
+
+function displayScores() {
+    let myWins = localStorage.getItem('scores');
+    let myLosses = localStorage.getItem('losses');
+
+    if (localStorage.length === 0) {
+      document.getElementById('score').innerText = 0;
+      document.getElementById('lose').innerText = 0;
+
+    } else {
+    document.getElementById('score').innerText = myWins;
+    document.getElementById('lose').innerText = myLosses;
+}}
 
 // Creat an array to hold the picture and qusetion and answers.
 
