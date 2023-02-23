@@ -60,7 +60,7 @@ function displayQuizQuestion() {
 function displayQuiz (scenarioIndex) {
     let quiz = scenarios.find(quiz => quiz.id === scenarioIndex);
     
-    quizText.quizContent = quiz.question;
+    quizText.textContent = quiz.question;
 
     bgImage.style.backgroundImage = quiz.background;
 
