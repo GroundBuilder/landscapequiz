@@ -72,7 +72,7 @@ function displayQuiz (scenarioIndex) {
         
         let quizButtons = document.createElement('button');
         
-        quizButtons.textContent = respond.question;
+        quizButtons.textContent = respond.option;
         
         quizButtons.classList.add('btn');
         
@@ -671,5 +671,3 @@ let scenarios = [
         ],
     },
 ]
-
-runGame();
