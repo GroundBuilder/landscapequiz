@@ -36,10 +36,10 @@ body {
 .game_area_box {
     opacity: 0.8;
     /*background-color: #efbfc9;*/
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
-    /*width: 90%;*/
-    /*max-width: 800px;*/
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    max-width: 800px;
 
 } 
 
@@ -121,10 +121,19 @@ body {
     pointer-events: auto; 
 }
 
+
+
 #quiz_img {
     background: url() center center;
     background-color: #e8889d;
     background-repeat: no-repeat;
+    /*position: fixed; */
+    width: 80vw;
+    height: 10vw;
+    object-fit: scale-down;
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
 
 }   
 
