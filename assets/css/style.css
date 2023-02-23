@@ -131,10 +131,9 @@ footer nav ul li {
     background: url() center center;
     background-color: #e8889d;
     background-repeat: no-repeat;
-    /*position: fixed; */
     width: 80vw;
     height: 10vw;
-    object-fit: scale-down;
+    object-fit: fill;
     max-width: 790px;
     margin-left: auto;
     margin-right: auto;
