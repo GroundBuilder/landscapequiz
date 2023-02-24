@@ -27,14 +27,12 @@ let bgImage = document.getElementById("quiz_img");
 
 let startQuiz = document.getElementById('open_quiz_btn');
 
-/*
-startQuiz.addEventListener("click", function() {
-    runGame();
-    console.log("Button klicked")
-});*/
+
+
 
 function runGame() {
-    displayQuiz(1);
+    randQuestion();
+    /*displayQuiz(1);*/
 
 }
 
@@ -80,7 +78,7 @@ function optionResponse(respond) {
    //  for(var i = 0; i < scenarios.length; i++)
     // -- If  there is no outcome, just change to the clicked quiz
     if (respond.outcome == null) {
-        displayQuiz(respond.getTo);
+        check(respond.randQ);
     // -- If you pick a winning out
     } else if (respond.outcome == "score") {
         // -- Increase the value of the winning score
@@ -88,7 +86,7 @@ function optionResponse(respond) {
         // -- Store the new value for wins in local storage
         storeScores();
         // -- Move to the next quiz
-        displayQuiz(respond.getTo);
+        check(respond.randQ);
     // -- If you pick a losing outcome
     } else if (respond.outcome == "lose") {
         // -- Increase the loss score by 1
@@ -96,20 +94,90 @@ function optionResponse(respond) {
         // -- Store the new value for losses in a local storage
         storeScores();
         // -- Go to the next quiz
-        displayQuiz(respond.getTo);
+        check(respond.randQ);
     }
 }
+// --------------------- Down ------------------
+var shieldsquiz = [
+    "url('vastmanlands_vapen.png')", //0
+    "url('vastergotlands_vapen.png')",          //1
+    "url('varmlands_vapen.png')"      //2
+]
+
+var options = [
+['Vastmanland', 'Dalarna', 'Norrland', 'Bohuslan'], // [0][0-3]
+['Pretend to be a Zombie', 'Vastergotland', 'out of sight', 'Gävleborg'], // [1][0-2]
+['Distract it with fire', 'Distract it whit loud noises', 'Varmland', 'Gävleborg'] // [2][0-2]
+];
 
 var randQ = 0;
 
-function randQuestion(){
-    var randQ = Math.floor(Math.random()*scenarios.length);
-    document.getElementById('game_box').innerHTML = scenarios[randQ];
 
-    for(var i = 0; i < 3; i++){
-        document.getElementById('option'+ i).innerHTML = scenarios[3][randQ][i];
+function check() {
+    for(var i = 0; i < 4; i++){
+        if(document.getElementById('option' + i ).checked){
+            var answer = document.getElementById('option' + i).value;
+        }
+    }
+    if (randQ == 0){
+        if (answer == 0){
+            addWin();
+            storeScores();
+            document.getElementsByClassName('game_btn').innerHTML = 'score';
+            randQuestion(randQ);
+            respond.outcome == "score";
+            quizButtons.addEventListener('click', () => optionResponse(respond));
+        }else{
+            document.getElementsByClassName('game_btn').innerHTML = 'lose';
+            addLoss();
+            storeScores();
+            randQuestion(randQ);
+            respond.outcome == "lose";
+            quizButtons.addEventListener('click', () => optionResponse(respond));
+        }
+    }
+    if (randQ == 1){
+        if (answer == 1){
+            document.getElementsByClassName('game_btn').innerHTML = 'score';
+            addWin();
+            storeScores();
+            randQuestion(randQ);
+            respond.outcome == "score";
+            quizButtons.addEventListener('click', () => optionResponse(respond));
+        }else{
+            document.getElementsByClassName('game_btn').innerHTML = 'lose';
+            respond.outcome == "lose";
+            addLoss();
+            storeScores();
+            randQuestion(randQ);
+            quizButtons.addEventListener('click', () => optionResponse(respond));
+        }
     }
 }
+
+/*
+function loadQuestion(){
+    var randQ = Math.floor(Math.random()*shieldsquiz.length);
+    document.getElementById('question').style.background = shieldsquiz[randQ],
+    
+
+
+    for(var i = 0; i < 4; i++){
+        document.getElementById('oText'+ i).innerHTML = options[randQ][i];
+    }
+}
+*/
+
+function randQuestion(){
+    var randQ = Math.floor(Math.random()*shieldsquiz.length);
+    document.getElementById('quiz_img').style.background = shieldsquiz[randQ];
+
+    for(var i = 0; i < 4; i++){
+        document.getElementById('option'+ i).innerHTML = options[randQ][i];
+    }
+}
+
+// ------------------------------Up ---------------
 
 function addWin() {
     let oldWin = parseInt(document.getElementById('score').innerText);
@@ -142,7 +210,7 @@ function displayScores() {
 
 
 // Creat an array to hold the picture and qusetion and answers.
-
+/*
 let scenarios = [
     {
         id: 1,
@@ -728,7 +796,7 @@ let scenarios = [
         ],
     },
 ]
-
+*/
 runGame();
 
 clearScoreButton.addEventListener('click', restartButton);
