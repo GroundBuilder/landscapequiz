@@ -54,6 +54,14 @@ Features include:
 
 Quiz has a very simple, and easy-to-follow skeleton with only two pages. Wireframe have been used to make the layout. 
 
+## Bugs
+
+### Fixed / Solved
+
+### Still existing
+
+- The `innerHTML` is building up more and more pictures. Not time to find where to place the `remove()` function.
+
 
 ## Deployment
 
