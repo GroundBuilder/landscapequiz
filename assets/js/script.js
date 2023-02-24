@@ -31,7 +31,7 @@ let startQuiz = document.getElementById('open_quiz_btn');
 
 
 function runGame() {
-    displayQuiz(1);
+    displayQuiz(randQ);
     displayScores();
 
 }
@@ -45,15 +45,18 @@ function displayQuiz (scenarioIndex) {
 
     bgImage.innerHTML += "<img id='delete_img' src=" + quiz.background + ">"
 
-    
+
     while (quizButton.firstChild) {
         quizButton.removeChild(quizButton.firstChild);
-        // document.getElementById('delete_img').remove();
+        //document.getElementById('delete_img').remove();
+        //parent.removeChild(child);
     }
 
     quiz.response.forEach(respond => {
         
         let quizButtons = document.createElement('button');
+
+        let child = document.getElementById('delete_img');
         
         quizButtons.textContent = respond.option;
         
@@ -103,12 +106,15 @@ function optionResponse(respond) {
 
 
 function randQuestion(){
-    var randQ = Math.floor(Math.random()*shieldsquiz.length);
+    Math.floor(Math.random()*25);
 
-    for(var i = 0; i < 4; i++){
+    /* for(var i = 0; i < 4; i++){
         document.getElementById('option'+ i).innerHTML = options[randQ][i];
-    }
+    } */
 }
+
+let randQ = Math.floor(Math.random()*25 + 1);
+
 
 
 function addWin() {
@@ -247,7 +253,7 @@ let scenarios = [
     {
         id: 5,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/bohuslans_vapen.png')",
+        background: "assets/images/bohuslans_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -270,7 +276,7 @@ let scenarios = [
     {
         id: 6,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastergotlands_vapen.png')",
+        background: "assets/images/vastergotlands_vapen.png",
         response: [
             {
                 option: "Vastergotland",
@@ -293,7 +299,7 @@ let scenarios = [
     {
         id: 7,
         question: `Which landscape does this shield belong to?`,
-        background: "url('../images/vasterbottens_vapen.png')",
+        background: "assets/images/vasterbottens_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -316,7 +322,7 @@ let scenarios = [
     {
         id: 8,
         question: `Which landscape does this shield belong to?`,
-        background: "url('../images/sodermanlands_vapen.png')",
+        background: "assets/images/sodermanlands_vapen.png",
         response: [
             {
                 option: "Sodermanland",
@@ -339,7 +345,7 @@ let scenarios = [
     {
         id: 9,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -362,7 +368,7 @@ let scenarios = [
     {
         id: 10,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -385,7 +391,7 @@ let scenarios = [
     {
         id: 11,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -408,7 +414,7 @@ let scenarios = [
     {
         id: 12,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -431,7 +437,7 @@ let scenarios = [
     {
         id: 13,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -454,7 +460,7 @@ let scenarios = [
     {
         id: 14,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -477,7 +483,7 @@ let scenarios = [
     {
         id: 15,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -500,7 +506,7 @@ let scenarios = [
     {
         id: 16,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -523,7 +529,7 @@ let scenarios = [
     {
         id: 17,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -546,7 +552,7 @@ let scenarios = [
     {
         id: 18,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -569,7 +575,7 @@ let scenarios = [
     {
         id: 19,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -592,7 +598,7 @@ let scenarios = [
     {
         id: 20,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -615,7 +621,7 @@ let scenarios = [
     {
         id: 21,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -661,7 +667,7 @@ let scenarios = [
     {
         id: 23,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -684,7 +690,7 @@ let scenarios = [
     {
         id: 24,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -707,7 +713,7 @@ let scenarios = [
     {
         id: 25,
         question: `Which landscape does this shield belong to?`,
-        background: "url('assets/images/vastmanlands_vapen.png')",
+        background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
@@ -732,3 +738,5 @@ let scenarios = [
 runGame();
 
 clearScoreButton.addEventListener('click', restartButton);
+
+console.log(randQ);
