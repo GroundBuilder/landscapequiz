@@ -54,6 +54,12 @@ Features include:
 
 Quiz has a very simple, and easy-to-follow skeleton with only two pages. Wireframe have been used to make the layout. 
 
+### Surface
+
+Colors
+
+![Palet](docs/readme_images/farger.png)
+
 ## Bugs
 
 ### Fixed / Solved
