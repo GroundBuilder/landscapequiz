@@ -2,7 +2,7 @@ export let scenarios
 
 let scenarios = [
     {
-        id: 1,
+        id: 0,
         question: "Which landscape does this shield belong to?", 
         background: "url('assets/images/upplands_vapen.png')",
         response: [
@@ -29,7 +29,7 @@ let scenarios = [
         ],
     },
     {
-        id: 2,
+        id: 1,
         question: 'Which landscape does this shield belong to?',
         background: "url('assets/images/vastmanlands_vapen.png')",
         response: [
@@ -56,7 +56,7 @@ let scenarios = [
         ],
     },
     {
-        id: 3,
+        id: 2,
         question: 'Which landscape does this shield belong to?',
         background: "url('assets/images/angermanlands_vapen.png')",
         response: [
@@ -79,7 +79,7 @@ let scenarios = [
         ],
     },
     {
-        id: 4,
+        id: 3,
         question: `Which landscape does this shield belong to?`,
         background: "url('assets/images/blekinges_vapen.png')",
         response: [

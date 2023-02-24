@@ -77,6 +77,7 @@ function restartButton() {
 
 
 function optionResponse(respond) {
+   //  for(var i = 0; i < scenarios.length; i++)
     // -- If  there is no outcome, just change to the clicked quiz
     if (respond.outcome == null) {
         displayQuiz(respond.getTo);
@@ -95,7 +96,18 @@ function optionResponse(respond) {
         // -- Store the new value for losses in a local storage
         storeScores();
         // -- Go to the next quiz
-        displayQuiz(respond.goTo);
+        displayQuiz(respond.getTo);
+    }
+}
+
+var randQ = 0;
+
+function randQuestion(){
+    var randQ = Math.floor(Math.random()*scenarios.length);
+    document.getElementById('game_box').innerHTML = scenarios[randQ];
+
+    for(var i = 0; i < 3; i++){
+        document.getElementById('option'+ i).innerHTML = scenarios[3][randQ][i];
     }
 }
 
