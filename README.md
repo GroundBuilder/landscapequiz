@@ -68,6 +68,9 @@ Features include:
 How to creat Modals
 https://www.w3schools.com/howto/howto_css_modals.asp
 
+### Media
+- All the images of province shields in the site was taken from [Wikipedi](https://www.wikipedia.org/)
+
 ## Acknowledgements
 
 A huge thank you to my mentor Gareth for your help and support that kept me motivated.
