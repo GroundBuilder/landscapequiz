@@ -23,6 +23,36 @@ Making it apear as a simpel quiz game, it will make this game more fun, and whan
 - User can reset the result
 - User can se how well its going
 
+
+### Scope
+
+The aim of this project was to use vanilla JavaScript and creat a image-base quiz. I decided to go ahead with a imgae-based quiz with random image of province shields of Sweden.
+
+Features include:
+- pop-up information of game rules
+- clear score result
+- start game button
+- Score tracker, increment score
+
+
+### Structure
+
+- Index page
+- - Title
+- - Info button
+- - Quiz start button
+- - Backround image of sweden whit its stucture of provinces.
+
+- Game page
+- - Title
+- - Reset result button
+- - Box with image of province shield
+- - Inside the box, four aswers buttons
+- - Score of win and loses
+
+### Skeleton
+
+
 ## Credits
 
 ### Content
@@ -33,6 +63,7 @@ Making it apear as a simpel quiz game, it will make this game more fun, and whan
 - [Youtube.1](https://www.youtube.com/watch?v=ykszkgydoG4&list=FLruW0TYzckk7aRMpw8_TgFg&index=1) To make random question.
 - [Youtube.2](https://www.youtube.com/watch?v=R1S_NhKkvGA) To make strukture of quiz.
 - [W3school](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_progressbar_3) To make a progress bar.
+- Increment
 
 How to creat Modals
 https://www.w3schools.com/howto/howto_css_modals.asp
