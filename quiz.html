@@ -25,25 +25,29 @@
     <title>LandscapeQuiz</title>
 </head>
 <body id="game_background" class="game-background">
-    <header>
+    <header class="header">
         <a href="index.html"><img class="logo" src="assets/images/logo.png" alt="logo">
             <h1 class="heading">LandscapeQuiz</h1>
         </a>
     </header>
    
-    <!-- Start quiz game button -->
-    <div class="start_quiz_btn">
-        <button id="restart_quiz_btn" class="beginning" data-type="Reset quiz button">Reset Quiz Score</button>
-    </div>
+    
     
     <!-- Quiz game area -->
     <div id="game_area_box" class="game_area_box">
-        <div class="game_box"></div>
-            <button data-type="close-game" class="btn x-btn quit">&times;</button>
-            <p><h2>Sweden Quiz game</h2></p>
+        <div class="game_box">
+            <!-- Start quiz game button -->
+            <div>
+                <button id="restart_quiz_btn" class="beginning btn" data-type="Reset quiz button">Reset Quiz Score</button>
+            </div>
+        
             <div  class="quiz_img">
-                <div id="game_box" class="game_box">Question here</div>
+                <div id="game_box" class="game_box"><h2>Question here</h2></div>
+                
+                <!-- Here will the quiz image uplaoad -->
                 <div id="quiz_img" class="pic-shields"></div>
+
+                <!-- Here will options for the quiz upload -->
                 <div id="btn_holder" class="btn_holder">
                     <button onclick="check()" data-type="answer1" id="option0" class="btn game_btn question-1" value="0"></button>
 
@@ -60,18 +64,6 @@
             </div>
         </div>
 
-    </div>
-
-    <!-- Score box -->
-    <div id="score_box" class="score_box">  
-            <div class="text_completed">Congrat's, you have finish this Quiz!</div>
-            <div class="reslut_text">
-                <!-- Put the score result in here: -->
-            </div>
-            <div class="buttons">
-                <button data-type="startquiz" class="btn restart">Play Again</button>
-                <button data-type="quitquiz" class="btn quit">Quit Quiz</button>
-            </div>
     </div>
 
     <div id="score-area">
