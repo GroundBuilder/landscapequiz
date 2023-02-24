@@ -171,6 +171,9 @@ function loadQuestion(){
 function randQuestion(){
     var randQ = Math.floor(Math.random()*shieldsquiz.length);
     document.getElementById('quiz_img').style.background = shieldsquiz[randQ];
+    document.getElementById('quiz_img').style.backgroundSize = "400px 400px";
+    document.getElementById('quiz_img').style.backgroundRepeat = "no-repeat";
+    /*document.getElementById('quiz_img').style.backgroundPosition: "center center";*/
 
     for(var i = 0; i < 4; i++){
         document.getElementById('option'+ i).innerHTML = options[randQ][i];
