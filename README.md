@@ -58,6 +58,9 @@ Quiz has a very simple, and easy-to-follow skeleton with only two pages. Wirefra
 
 ### Fixed / Solved
 
+- Image didn't come up in the beginning. change the source of the image, cause in the beginning the image was created in style.css, but then it was greated inside game.html page.
+- The quiz started at the same place everytime. So fixed a random number. And after that added +1 to math, cause the quiz id starts with 1.
+
 ### Still existing
 
 - The `innerHTML` is building up more and more pictures. Not time to find where to place the `remove()` function.
