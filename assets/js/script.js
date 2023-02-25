@@ -25,7 +25,6 @@ let quizButton = document.getElementById("btn_holder");
 
 let bgImage = document.getElementById("quiz_img");
 
-let startQuiz = document.getElementById('open_quiz_btn');
 
 
 
@@ -56,7 +55,7 @@ function displayQuiz (scenarioIndex) {
         
         let quizButtons = document.createElement('button');
 
-        let child = document.getElementById('delete_img'); // To take one picture off, not use yet
+        // -- let child = document.getElementById('delete_img'); // To take one picture off, not use yet
         
         quizButtons.textContent = respond.option;
         
@@ -65,7 +64,7 @@ function displayQuiz (scenarioIndex) {
         quizButtons.addEventListener('click', () => optionResponse(respond));
         
         quizButton.appendChild(quizButtons);
-    })
+    });
 
 }
 function restartButton() {

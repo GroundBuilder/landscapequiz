@@ -21,7 +21,7 @@ a:link {
 
 .quiz_info_box {
     display: none;
-    width: 500px;
+    width: 400px;
     background: #f6f6f6;
     border-radius: 5px;
     opacity: 1;
@@ -143,7 +143,6 @@ footer nav ul li {
     width: 500px;
     height: 400px;
     object-fit: fill;
-    max-width: 600;
     margin-left: auto;
     margin-right: auto;
 
@@ -258,7 +257,7 @@ footer {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     body {
         padding: 10px;
     }
@@ -266,9 +265,8 @@ footer {
         height: 75vh;
     }
 
-    #quiz_img {
+    #quiz_info_box {
         width: 100;
-        height: 120;
         
     }
 

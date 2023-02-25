@@ -90,8 +90,57 @@ I relied the Love Maths project and lessons provided from the Code Institute.
 I used a some tutors from youtube to get ideas for the quiz.
 
 
-## Technologies and Resources
+## Testing
 ***
+### Validator Tests
+
+- HTML was validated using [W3C markup validator](https://validator.w3.org/).  
+
+    #### index.html     
+    - On the first validation there were 3 error types returned in the beginning, but how now been fixed.
+    - The most recent validation shows no errors. Details [here](docs/testing/w3-validator_index.png).  
+
+    #### guiz.html
+    - The first validation of this html file returned the same errors as index.html and the same changes were made.
+    - The most recent validation shows no errors. Details [here](docs/testing/w3-validator_quiz.png).  
+
+- CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/).  
+No errors were returned ([see here]()) but two warnings were raised ([see here]()) about my imported stylesheets - these are for the fonts. 
+
+- JavaScript was validated using [JSHint](https://jshint.com/).   
+Configure settings were changed to accept ES6 Javascript features  
+    - intro.js first returned minor syntax errors regarding missing or incorrectly placed semi colons. These were fixed and subsequently no errors were returned. Details of latest results [here](docs/testing/jshint_intro.png) 
+    - script.js first returned minor syntax errors regarding missing or incorrectly placed semi colons. These were fixed and subsequently no errors were returned. Details of latest results [here](docs/testing/jshint_script.png) 
+
+
+### Accessibility test
+
+- Accessibility of the site was tested with [WAVE (Web Accessibility Evaluation Tool)](https://wave.webaim.org/).  
+index.html results are the same as the quiz. No errors were returned and no contrast issues were detected.
+quiz.html results are [here](docs/testing/wave_quiz.png). No errors or contrast errors were returned. 
+
+
+### Performance test
+
+- Performance was tested with [lighthouse](https://developers.google.com/web/tools/lighthouse/run) and [webpage test](https://www.webpagetest.org/).  
+Lighthouse desktop results [here](assets/readme-files/lighthouse-desktop.png).  
+Lighthouse mobile results [here](assets/readme-files/lighthouse-mobile.png).  
+Webpagetest results [here](assets/readme-files/webpagetest.png). 
+
+
+### Manual testing
+
+The live link was sent to multiple people for feedback on functionality and design.  
+I played through the game myself repeatedly in search of errors and improvements. There is still some to fix.  
+
+| Feature              | Expected outcome                                                                                  | Does it work?  |
+| -------------        |:-------------:                                                                                    | -----:|
+| Title logo           | Appears at the top of both pages. On the game page it redirects to the landing page if clicked.   |  Yes  |
+| Start quiz button    | Brings user to the start of the game.                                                             |  Yes  |
+| Quiz rules button    | Displays instructions on screen for how to play the game.                                         |  Yes  |
+| Reset score button   | When user clicks, it will reset the score to zero (0).                                            |  Yes  |
+| Score tally          |  Displays '0' if never played before or score was reset, and should display previous score so long as user hasn't cleared cache.   |  Yes     |
+| Scenario change      |  When user clicks an option, the scenario changes to the appropriate follow-up scenario.          |   No  | 
 
 
 ## Bugs
