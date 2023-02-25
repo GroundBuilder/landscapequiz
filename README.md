@@ -61,6 +61,39 @@ Colors
 
 ![Palet](docs/readme_images/farger.png)
 
+## Features
+
+### Languages
+
+[HTML](https://html.com/): HyperText Markup Language. It is the language used as the basis of building websites and provides the main structure and format to the site.
+
+[CSS](https://www.w3.org/Style/CSS/Overview.en.html): Cascading Style Sheets. It's the language used to make the web elements look better. It adds colour, positioning, fonts etc.
+
+[JavaScript](https://www.w3schools.com/js/): JavaScript gets more interaction for the user. 
+
+This project uses vanilla JavaScript, meaning no external frameworks have been used.
+
+### Programmes and Libraries Used
+
+- [Balsamiq](https://balsamiq.com/tutorials/) used to build framework.
+- [Chrome devtools](https://developer.chrome.com/docs/devtools/) The console was used ofren to detect errors and ensure my code was functioning.
+- [Font Awesome](https://fontawesome.com/) used to source social media icons
+- [Git](https://git-scm.com/) used for version control of my site and pushing code to GitHub
+- [GitHub](https://github.com/) the cloud storage system for my projects. The location of this site's repository, and place to deploy site.
+- [GitPod](https://gitpod.io/) the IDE used to write and preview the code for this website.
+- [Coolers]() used to pick my colours for the website.
+- [Favicon](https://favicon.io/emoji-favicons/giraffe) used to make the favicon in the browser tab of the website.
+
+### Resources for my code
+
+I relied the Love Maths project and lessons provided from the Code Institute. 
+I used a some tutors from youtube to get ideas for the quiz.
+
+
+## Technologies and Resources
+
+
+
 ## Bugs
 
 ### Fixed / Solved
