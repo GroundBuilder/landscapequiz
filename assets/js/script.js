@@ -43,7 +43,7 @@ function displayQuiz (scenarioIndex) {
     
     quizText.textContent = quiz.question;
 
-    bgImage.innerHTML += "<img id='delete_img' src=" + quiz.background + ">"
+    bgImage.innerHTML += "<img id='delete_img' alt='quiz image' src=" + quiz.background + ">"
 
 
     while (quizButton.firstChild) {
