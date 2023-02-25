@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
 }); */
 
 
+
+
 let quizText = document.getElementById("game_box");
 
 let quizButton = document.getElementById("btn_holder");
@@ -26,7 +28,9 @@ let quizButton = document.getElementById("btn_holder");
 let bgImage = document.getElementById("quiz_img");
 
 
-
+// This game function to call scenarios and response options for the game as required
+// was modified from youtube
+// https://www.youtube.com/watch?v=R1S_NhKkvGA of "Web Dev Simplified"
 
 
 function runGame() {
@@ -102,7 +106,7 @@ function optionResponse(respond) {
     }
 }
 
-
+// https://www.youtube.com/watch?v=ykszkgydoG4&list=FLruW0TYzckk7aRMpw8_TgFg&index=1 idea to make random question.
 // -- Make the quiz generate a random number to wich queston to start with --
 let randQ = Math.floor(Math.random()*25 + 1);
 
@@ -117,6 +121,9 @@ function addLoss() {
     let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
 }
+
+// A function to store scores
+// Idea have if from MDN lesson https://developer.mozilla.org/en-US/docs/Web/API/Storage
 
 function storeScores() {
     localStorage.setItem('scores', document.getElementById('score').innerText);
