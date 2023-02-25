@@ -4,6 +4,7 @@
 
 The goal is to get as many correct answers over the province shilds. You will get a image of the province shield, and four different names of province, only one is correct. When you answer, you will get your point and get a new shield-image from another province in Sweden.
 
+![Mockup](docs/readme_images/mockup_lanscape.png)
 
 ## UXD User experience Design
 
