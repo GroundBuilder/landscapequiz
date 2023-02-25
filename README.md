@@ -105,7 +105,7 @@ I used a some tutors from youtube to get ideas for the quiz.
     - The most recent validation shows no errors. Details [here](docs/testing/w3-validator_quiz.png).  
 
 - CSS was validated using [W3C CSS validator](https://jigsaw.w3.org/css-validator/).  
-No errors were returned ([see here]()) but two warnings were raised ([see here]()) about my imported stylesheets - these are for the fonts. 
+No errors were returned ([see here](docs/testing/wave_quiz.png)), ([see here](docs/testing/w3-validator_index.png)). 
 
 - JavaScript was validated using [JSHint](https://jshint.com/).   
 Configure settings were changed to accept ES6 Javascript features  
@@ -123,10 +123,9 @@ quiz.html results are [here](docs/testing/wave_quiz.png). No errors or contrast 
 ### Performance test
 
 - Performance was tested with [lighthouse](https://developers.google.com/web/tools/lighthouse/run) and [webpage test](https://www.webpagetest.org/).  
-Lighthouse desktop results [here](assets/readme-files/lighthouse-desktop.png).  
-Lighthouse mobile results [here](assets/readme-files/lighthouse-mobile.png).  
-Webpagetest results [here](assets/readme-files/webpagetest.png). 
-
+  
+Lighthouse mobile results [here](docs/testing/lighthouse_mobile_quiz.png).  
+Webbpagetest was "Not bad" for the page.
 
 ### Manual testing
 
