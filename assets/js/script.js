@@ -1,5 +1,5 @@
 /*
-console.log("Connected to the index.html")
+console.log("Connected to the index.html");
 // Wait for the DOM to finish loading before running the game.
 //Get the answer button elements and add event listeners to them.
 
@@ -43,20 +43,20 @@ function displayQuiz (scenarioIndex) {
     
     quizText.textContent = quiz.question;
 
-    bgImage.innerHTML += "<img id='delete_img' alt='quiz image' src=" + quiz.background + ">"
+    bgImage.innerHTML += "<img id='delete_img' alt='quiz image' src=" + quiz.background + ">";
 
 
     while (quizButton.firstChild) {
         quizButton.removeChild(quizButton.firstChild);
-        //document.getElementById('delete_img').remove();
-        //parent.removeChild(child);
+        //-- document.getElementById('delete_img').remove(); //to take one picture off, not use yet
+        //-- parent.removeChild(child); //to take one picture off, not use yet
     }
 
     quiz.response.forEach(respond => {
         
         let quizButtons = document.createElement('button');
 
-        let child = document.getElementById('delete_img');
+        let child = document.getElementById('delete_img'); // To take one picture off, not use yet
         
         quizButtons.textContent = respond.option;
         
@@ -104,25 +104,16 @@ function optionResponse(respond) {
 }
 
 
-
-function randQuestion(){
-    Math.floor(Math.random()*25);
-
-    /* for(var i = 0; i < 4; i++){
-        document.getElementById('option'+ i).innerHTML = options[randQ][i];
-    } */
-}
-
+// -- Make the quiz generate a random number to wich queston to start with --
 let randQ = Math.floor(Math.random()*25 + 1);
 
-
-
+// -- Add score to storage
 function addWin() {
     let oldWin = parseInt(document.getElementById('score').innerText);
     document.getElementById('score').innerText = ++oldWin;
 }
 
-
+// -- Add loses to storage
 function addLoss() {
     let oldLoss = parseInt(document.getElementById('lose').innerText);
     document.getElementById('lose').innerText = ++oldLoss;
@@ -733,7 +724,7 @@ let scenarios = [
             },
         ],
     },
-]
+];
 
 runGame();
 
