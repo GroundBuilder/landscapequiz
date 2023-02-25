@@ -63,6 +63,29 @@ Colors
 
 ## Features
 ***
+### Existing featur
+- User want to play the game.
+    - Featur: Game starts when click button.
+
+- User answer question, correct or wrong
+    - Featur: Score is updated
+
+- User want to keep track of score
+    - Score is tracked at the bottom of the page.
+
+- User accidential refrech site.
+    - Score is there, if user cache is still saved.
+
+- User whant to clear the score.
+    - Score is cleared when button is pressed.
+
+### Future features
+- get sounds if correct answer
+- get a visual on the button when the answer is right or wrong.
+- maka a highscore whit input name.
+
+## Technologies and Resources Used
+***
 ### Languages
 
 [HTML](https://html.com/): HyperText Markup Language. It is the language used as the basis of building websites and provides the main structure and format to the site.
