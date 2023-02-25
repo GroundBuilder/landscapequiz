@@ -67,8 +67,17 @@ Colors
 - User want to play the game.
     - Featur: Game starts when click button.
 
+![Start](docs/readme_images/start_site_quiz.png)
+
+- User get a quiz image.
+    - Featur: The quiz image is random selected.
+
+![Game](docs/readme_images/quiz_game.png)
+
 - User answer question, correct or wrong
     - Featur: Score is updated
+
+![Score](docs/readme_images/score_bord.png)
 
 - User want to keep track of score
     - Score is tracked at the bottom of the page.
@@ -78,6 +87,8 @@ Colors
 
 - User whant to clear the score.
     - Score is cleared when button is pressed.
+
+![Reset](docs/readme_images/reset_score.png)
 
 ### Future features
 - get sounds if correct answer
