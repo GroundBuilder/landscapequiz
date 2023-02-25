@@ -90,6 +90,8 @@ Colors
 
 ![Reset](docs/readme_images/reset_score.png)
 
+- 404 page if page not found.
+
 ### Future features
 - get sounds if correct answer
 - get a visual on the button when the answer is right or wrong.
