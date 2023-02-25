@@ -7,7 +7,7 @@ The goal is to get as many correct answers over the province shilds. You will ge
 ![Mockup](docs/readme_images/mockup_lanscape.png)
 
 ## UXD User experience Design
-
+***
 This image quiz game is for you when you have spare time and want to learn what name each province-shield have. It will allow you to see some beautiful and colorful image och province-shild. Everyone have its own story and meaning. To make it more inlearning, the image is random selected, so even if you refrech, you will get them in a different order.
 
 ### User Goals
@@ -62,7 +62,7 @@ Colors
 ![Palet](docs/readme_images/farger.png)
 
 ## Features
-
+***
 ### Languages
 
 [HTML](https://html.com/): HyperText Markup Language. It is the language used as the basis of building websites and provides the main structure and format to the site.
@@ -91,11 +91,11 @@ I used a some tutors from youtube to get ideas for the quiz.
 
 
 ## Technologies and Resources
-
+***
 
 
 ## Bugs
-
+***
 ### Fixed / Solved
 
 - Image didn't come up in the beginning. change the source of the image, cause in the beginning the image was created in style.css, but then it was greated inside game.html page.
@@ -107,7 +107,7 @@ I used a some tutors from youtube to get ideas for the quiz.
 
 
 ## Deployment
-
+***
 ### Version Control
 The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘landscapequiz’.
 
@@ -143,7 +143,7 @@ The project will now of been cloned on your local machine for use.
 
 
 ## Credits
-
+***
 ### Content
 
 - [W3school](https://www.w3schools.com/) find how to fix a Modal.
@@ -161,5 +161,5 @@ https://www.w3schools.com/howto/howto_css_modals.asp
 - All the images of province shields in the site was taken from [Wikipedi](https://www.wikipedia.org/)
 
 ## Acknowledgements
-
+***
 A huge thank you to my mentor Gareth for your help and support that kept me motivated.
