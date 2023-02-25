@@ -208,18 +208,22 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Vastmanland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Angermanland",
+                outcome: 'score'
                 getTo: 4
             },
             {
                 option: "Norrbotten",
+                outcome: 'lose'
                 getTo: 1
             },
         ],
@@ -231,18 +235,22 @@ let scenarios = [
         response: [
             {
                 option: "Blekinge",
+                outcome: 'score'
                 getTo: 5
             },
             {
                 option: "Vastmanland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Uppland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Norrbotten",
+                outcome: 'lose'
                 getTo: 1
             },
         ],
@@ -254,18 +262,22 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Vastmanland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Uppland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Bohuslan",
+                outcome: 'score'
                 getTo: 6
             },
         ],
@@ -277,18 +289,22 @@ let scenarios = [
         response: [
             {
                 option: "Vastergotland",
+                outcome: 'score'
                 getTo: 7
             },
             {
                 option: "Vastmanland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Uppland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Norrbotten",
+                outcome: 'lose'
                 getTo: 1
             },
         ],
@@ -300,18 +316,22 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Vastmanland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Uppland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Vasterbotten",
+                outcome: 'score'
                 getTo: 8
             },
         ],
@@ -323,18 +343,22 @@ let scenarios = [
         response: [
             {
                 option: "Sodermanland",
+                outcome: 'score'
                 getTo: 9
             },
             {
-                option: "Vastmanland",
+                option: "Gotland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Uppland",
+                outcome: 'lose'
                 getTo: 1
             },
             {
                 option: "Norrbotten",
+                outcome: 'lose'
                 getTo: 1
             },
         ],
@@ -346,18 +370,22 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
+                outcome: 'lose'
                 getTo: 2
             },
             {
                 option: "Vastmanland",
+                outcome: 'lose'
                 getTo: 3
             },
             {
                 option: "Uppland",
+                outcome: 'lose'
                 getTo: 2
             },
             {
-                option: "Norrbotten",
+                option: "Smaland",
+                outcome: 'score'
                 getTo: 3
             },
         ],
@@ -369,18 +397,22 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
+                outcome: 'lose'
                 getTo: 2
             },
             {
-                option: "Vastmanland",
+                option: "Skane",
+                outcome: 'score'
                 getTo: 3
             },
             {
-                option: "Uppland",
+                option: "Medlepad",
+                outcome: 'lose'
                 getTo: 2
             },
             {
                 option: "Norrbotten",
+                outcome: 'lose'
                 getTo: 3
             },
         ],
@@ -687,7 +719,7 @@ let scenarios = [
     {
         id: 24,
         question: `Which landscape does this shield belong to?`,
-        background: "assets/images/vastmanlands_vapen.png",
+        background: "assets/images/lapplands_vapen.png",
         response: [
             {
                 option: "Ändra",
@@ -710,10 +742,10 @@ let scenarios = [
     {
         id: 25,
         question: `Which landscape does this shield belong to?`,
-        background: "assets/images/vastmanlands_vapen.png",
+        background: "assets/images/medelpads_vapen.png",
         response: [
             {
-                option: "Ändra",
+                option: "medelpad",
                 getTo: 2
             },
             {
