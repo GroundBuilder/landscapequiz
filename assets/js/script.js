@@ -44,6 +44,12 @@ let clearScoreButton = document.getElementById('restart_quiz_btn');
 function displayQuiz (scenarioIndex) {
     let quiz = scenarios.find(quiz => quiz.id === scenarioIndex);
     
+    // If there is an old image, remove it.
+    let oldImage = document.getElementById('delete_img'');
+    if (oldImage) {
+        bgImage.removeChild(oldImage);
+    }
+
     quizText.textContent = quiz.question;
 
     bgImage.innerHTML += "<img id='delete_img' alt='quiz image' src=" + quiz.background + ">";
