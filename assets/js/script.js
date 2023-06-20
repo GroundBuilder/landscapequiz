@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }); */
 
 
-import { scenarios } from "./scenarios";
+
 
 let quizText = document.getElementById("game_box");
 
@@ -44,11 +44,6 @@ let clearScoreButton = document.getElementById('restart_quiz_btn');
 function displayQuiz (scenarioIndex) {
     let quiz = scenarios.find(quiz => quiz.id === scenarioIndex);
     
-    // If there is an old image, remove it.
-    let oldImage = document.getElementById('delete_img'');
-    if (oldImage) {
-        bgImage.removeChild(oldImage);
-    }
 
     quizText.textContent = quiz.question;
 
@@ -155,6 +150,8 @@ function displayScores() {
 
 
 runGame();
+
+import { scenarios } from "./scenarios";
 
 clearScoreButton.addEventListener('click', restartButton);
 
