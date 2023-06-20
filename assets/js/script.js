@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }); */
 
 
-
+import { scenarios } from "./scenarios";
 
 let quizText = document.getElementById("game_box");
 
@@ -150,8 +150,6 @@ function displayScores() {
 
 
 runGame();
-
-import { scenarios } from "./scenarios";
 
 clearScoreButton.addEventListener('click', restartButton);
 
