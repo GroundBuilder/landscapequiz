@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }); */
 
 
-const { scenarios } = require('./scenarios.js');
+const { scenarios } = require('scenarios.js');
 
 let quizText = document.getElementById("game_box");
 
