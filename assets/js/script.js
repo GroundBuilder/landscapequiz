@@ -145,14 +145,6 @@ function displayScores() {
 
 // Creat an array to hold the picture and qusetion and answers.
 
-
-
-runGame();
-
-clearScoreButton.addEventListener('click', restartButton);
-
-console.log(randQ);
-
 let scenarios = [
     {
         id: 1,
@@ -770,3 +762,9 @@ let scenarios = [
         ],
     },
 ];
+
+runGame();
+
+clearScoreButton.addEventListener('click', restartButton);
+
+console.log(randQ);
