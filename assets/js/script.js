@@ -147,7 +147,7 @@ function displayScores() {
 
 
 // Import scenarios from another file.
-import { scenarios } from "./scenarios";
+import { scenarios } from "scenarios.js";
 
 runGame();
 
