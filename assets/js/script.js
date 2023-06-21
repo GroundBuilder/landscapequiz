@@ -1,6 +1,6 @@
 
 // Import scenarios from another file.
-import { scenarios } from "scenarios.js";
+import { scenarios } from "./scenarios.js";
 
 
 let quizText = document.getElementById("game_box");
