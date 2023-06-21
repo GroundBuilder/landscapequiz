@@ -57,21 +57,11 @@ function displayQuiz (scenarioIndex) {
     let quizButtons = document.createElement('button');
 
     
-
     bgImage.innerHTML += "<img id='delete_img' alt='quiz image' src=" + quiz.background + ">";
-
-/*
-    while (quizButton.firstChild) {
-        quizButton.removeChild(quizButton.firstChild);
-        //-- document.getElementById('delete_img').remove(); //to take one picture off, not use yet
-        //-- parent.removeChild(child); //to take one picture off, not use yet
-    } */
 
     quiz.response.forEach(respond => {
         
         let quizButtons = document.createElement('button');
-
-        // -- let child = document.getElementById('delete_img'); // To take one picture off, not use yet
         
         quizButtons.textContent = respond.option;
         
