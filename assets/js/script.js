@@ -23,7 +23,7 @@ let quizText = document.getElementById("game_box");
 
 let quizButton = document.getElementById("btn_holder");
 
-let bgImage = document.getElementById("quiz_img");
+let bgImage = document.getElementById("delete_img");
 
 
 // This game function to call scenarios and response options for the game as required
