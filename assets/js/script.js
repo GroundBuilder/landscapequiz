@@ -44,17 +44,14 @@ function displayQuiz (scenarioIndex) {
     let quiz = scenarios.find(quiz => quiz.id === scenarioIndex);
     
     // Uppload quiz question.
-    quizText.textContent = quiz.question
+    quizText.textContent = quiz.question  // Fine 
     while (bgImage.firstChild) {
         bgImage.removeChild(bgImage.firstChild)
     }
 
-    // If there is an old image, remove it.
-    // let oldImage = document.getElementById('delete_img');
-    // if (oldImage) {
-    //     oldImage.remove();
-    // }
-
+    while (quizButton.firstChild) {
+        quizButton.removeChild(quizButton.firstChild)
+    }
     
 
     let quizButtons = document.createElement('button');
