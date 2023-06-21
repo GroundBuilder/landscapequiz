@@ -452,17 +452,17 @@ let scenarios = [
         background: "assets/images/olands_vapen.png",
         response: [
             {
-                option: "Gastrikland",
+                option: "Narke",
                 outcome: 'lose',
                 getTo: 13
             },
             {
-                option: "Vastmanland",
+                option: "Harjedalen",
                 outcome: 'lose',
                 getTo: 13
             },
             {
-                option: "Uppland",
+                option: "Oland",
                 outcome: 'score',
                 getTo: 13
             },
@@ -484,17 +484,17 @@ let scenarios = [
                 getTo: 14
             },
             {
-                option: "Vastmanland",
+                option: "Norrbotten",
                 outcome: 'score',
                 getTo: 14
             },
             {
-                option: "Uppland",
+                option: "Harjedalen",
                 outcome: 'lose',
                 getTo: 14
             },
             {
-                option: "Norrbotten",
+                option: "Medelpad",
                 outcome: 'lose',
                 getTo: 14
             },
@@ -506,22 +506,22 @@ let scenarios = [
         background: "assets/images/narkes_vapen.png",
         response: [
             {
-                option: "Gastrikland",
+                option: "Jamtland",
                 outcome: 'lose',
                 getTo: 15
             },
             {
-                option: "Vastmanland",
+                option: "Vasterbotten",
                 outcome: 'lose',
                 getTo: 15
             },
             {
-                option: "Uppland",
+                option: "Vasterbotten",
                 outcome: 'lose',
                 getTo: 15
             },
             {
-                option: "Norrbotten",
+                option: "Narke",
                 outcome: 'score',
                 getTo: 15
             },
@@ -538,17 +538,17 @@ let scenarios = [
                 getTo: 16
             },
             {
-                option: "Vastmanland",
+                option: "Angermanland",
                 outcome: 'lose',
                 getTo: 16
             },
             {
-                option: "Uppland",
+                option: "Vasterbotten",
                 outcome: 'lose',
                 getTo: 16
             },
             {
-                option: "Norrbotten",
+                option: "Jamtland",
                 outcome: 'score',
                 getTo: 16
             },
@@ -570,7 +570,7 @@ let scenarios = [
                 getTo: 17
             },
             {
-                option: "Uppland",
+                option: "Harjedalen",
                 outcome: 'score',
                 getTo: 17
             },
@@ -587,7 +587,7 @@ let scenarios = [
         background: "assets/images/halsinglands_vapen.png",
         response: [
             {
-                option: "Gastrikland",
+                option: "Halsingland",
                 outcome: 'score',
                 getTo: 18
             },
@@ -619,7 +619,7 @@ let scenarios = [
                 getTo: 19
             },
             {
-                option: "Vastmanland",
+                option: "Halland",
                 outcome: 'score',
                 getTo: 19
             },
@@ -646,12 +646,12 @@ let scenarios = [
                 getTo: 20
             },
             {
-                option: "Vastmanland",
+                option: "Gotland",
                 outcome: 'score',
                 getTo: 20
             },
             {
-                option: "Uppland",
+                option: "Vasterbotten",
                 outcome: 'lose',
                 getTo: 20
             },
@@ -678,7 +678,7 @@ let scenarios = [
                 getTo: 21
             },
             {
-                option: "Uppland",
+                option: "Gastrikland",
                 outcome: 'score',
                 getTo: 21
             },
@@ -710,7 +710,7 @@ let scenarios = [
                 getTo: 222
             },
             {
-                option: "Norrbotten",
+                option: "Dalsland",
                 outcome: 'score',
                 getTo: 22
             },
@@ -722,7 +722,7 @@ let scenarios = [
         background: "assets/images/dalarnas_vapen.png",
         response: [
             {
-                option: "Gastrikland",
+                option: "Dalarna",
                 outcome: 'score',
                 getTo: 23
             },
@@ -749,17 +749,17 @@ let scenarios = [
         background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
-                option: "Ändra",
+                option: "Vasterbotten",
                 outcome: 'lose',
                 getTo: 24
             },
             {
-                option: "Ändra",
+                option: "Harjedale",
                 outcome: 'lose',
                 getTo: 24
             },
             {
-                option: "Uppland",
+                option: "Vastmanland",
                 outcome: 'score',
                 getTo: 24
             },
@@ -776,7 +776,7 @@ let scenarios = [
         background: "assets/images/lapplands_vapen.png",
         response: [
             {
-                option: "Ändra",
+                option: "Smaland",
                 outcome: 'lose',
                 getTo: 25
             },
@@ -791,7 +791,7 @@ let scenarios = [
                 getTo: 25
             },
             {
-                option: "Norrbotten",
+                option: "Lappland",
                 outcome: 'score',
                 getTo: 25
             },
