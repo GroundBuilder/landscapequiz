@@ -43,13 +43,20 @@ function displayQuiz (scenarioIndex) {
     // To find wich scenario to display.
     let quiz = scenarios.find(quiz => quiz.id === scenarioIndex);
     
-    quizText.textContent = quiz.question;
+    // Uppload quiz question.
+    quizText.textContent = quiz.question
+    while (bgImage.firstChild) {
+        bgImage.removeChild(bgImage.firstChild)
+    }
 
     // If there is an old image, remove it.
-    let quizButton = document.getElementById('delete_img');
-    if (quizButton) {
-        quizButton.remove();
-    }
+    // let oldImage = document.getElementById('delete_img');
+    // if (oldImage) {
+    //     oldImage.remove();
+    // }
+
+    
+
     let quizButtons = document.createElement('button');
 
     
@@ -157,7 +164,7 @@ function displayScores() {
 let scenarios = [
     {
         id: 1,
-        question: "Which landscape does this shield belong to?", 
+        question: "Which landscape does this shield belong to? 1", 
         background: "assets/images/upplands_vapen.png",
         response: [
             {
@@ -184,7 +191,7 @@ let scenarios = [
     },
     {
         id: 2,
-        question: 'Which landscape does this shield belong to?',
+        question: 'Which landscape does this shield belong to? 2',
         background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
@@ -211,7 +218,7 @@ let scenarios = [
     },
     {
         id: 3,
-        question: 'Which landscape does this shield belong to?',
+        question: 'Which landscape does this shield belong to? 3',
         background: "assets/images/angermanlands_vapen.png",
         response: [
             {
@@ -238,7 +245,7 @@ let scenarios = [
     },
     {
         id: 4,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 4`,
         background: "assets/images/blekinges_vapen.png",
         response: [
             {
@@ -265,7 +272,7 @@ let scenarios = [
     },
     {
         id: 5,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 5`,
         background: "assets/images/bohuslans_vapen.png",
         response: [
             {
@@ -292,7 +299,7 @@ let scenarios = [
     },
     {
         id: 6,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 6`,
         background: "assets/images/vastergotlands_vapen.png",
         response: [
             {
@@ -319,7 +326,7 @@ let scenarios = [
     },
     {
         id: 7,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 7`,
         background: "assets/images/vasterbottens_vapen.png",
         response: [
             {
@@ -346,7 +353,7 @@ let scenarios = [
     },
     {
         id: 8,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 8`,
         background: "assets/images/sodermanlands_vapen.png",
         response: [
             {
@@ -373,7 +380,7 @@ let scenarios = [
     },
     {
         id: 9,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 9`,
         background: "assets/images/smalands_vapen.png",
         response: [
             {
@@ -400,7 +407,7 @@ let scenarios = [
     },
     {
         id: 10,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 10`,
         background: "assets/images/skane_landskapsvapen.png",
         response: [
             {
@@ -427,7 +434,7 @@ let scenarios = [
     },
     {
         id: 11,
-        question: `Which landscape does this shield belong to?`,
+        question: `Which landscape does this shield belong to? 11`,
         background: "assets/images/ostergotland_vapen.png",
         response: [
             {
