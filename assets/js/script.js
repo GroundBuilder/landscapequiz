@@ -1,22 +1,6 @@
-/*
-console.log("Connected to the index.html");
-// Wait for the DOM to finish loading before running the game.
-//Get the answer button elements and add event listeners to them.
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "close-game") {
-                alert("You clicked close game!");
-            } else {
-                let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
-            }
-        });
-    }
-}); */
+// Import scenarios from another file.
+import { scenarios } from "scenarios.js";
 
 
 let quizText = document.getElementById("game_box");
@@ -85,7 +69,6 @@ function restartButton() {
 
 
 function optionResponse(respond) {
-   //  for(var i = 0; i < scenarios.length; i++)
     // -- If  there is no outcome, just change to the clicked quiz
     if (respond.outcome == null) {
         displayQuiz(respond.getTo);
@@ -145,9 +128,6 @@ function displayScores() {
     document.getElementById('lose').innerText = myLosses;
 }}
 
-
-// Import scenarios from another file.
-import { scenarios } from "scenarios.js";
 
 runGame();
 
