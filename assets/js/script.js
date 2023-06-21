@@ -151,18 +151,18 @@ function displayScores() {
 let scenarios = [
     {
         id: 1,
-        question: "Which landscape does this shield belong to? 1", 
+        question: "Which landscape does this shield belong to?", 
         background: "assets/images/upplands_vapen.png",
         response: [
             {
                 option: "Sordermanland",
                 outcome: 'lose',
-                getTo: 1,
+                getTo: 2,
             },
             {
                 option: "Vastmanland",
                 outcome: 'lose',
-                getTo: 1,
+                getTo: 2,
             },
             {
                 option: "Uppland",
@@ -172,19 +172,19 @@ let scenarios = [
             {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: 1,
+                getTo: 2,
             },
         ],
     },
     {
         id: 2,
-        question: 'Which landscape does this shield belong to? 2',
+        question: 'Which landscape does this shield belong to?',
         background: "assets/images/vastmanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
                 outcome: 'lose',
-                getTo: 1,
+                getTo: 3,
             },
             {
                 option: "Vastmanland",
@@ -194,29 +194,29 @@ let scenarios = [
             {
                 option: "Uppland",
                 outcome: 'lose',
-                getTo: 1,
+                getTo: 3,
             },
             {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: 1,
+                getTo: 3,
             },
         ],
     },
     {
         id: 3,
-        question: 'Which landscape does this shield belong to? 3',
+        question: 'Which landscape does this shield belong to?',
         background: "assets/images/angermanlands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
                 outcome: 'lose',
-                getTo: 1,
+                getTo: 4,
             },
             {
                 option: "Vastmanland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 4
             },
             {
                 option: "Angermanland",
@@ -226,13 +226,13 @@ let scenarios = [
             {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 4
             },
         ],
     },
     {
         id: 4,
-        question: `Which landscape does this shield belong to? 4`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/blekinges_vapen.png",
         response: [
             {
@@ -243,39 +243,39 @@ let scenarios = [
             {
                 option: "Vastmanland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 5
             },
             {
                 option: "Uppland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 5
             },
             {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 5
             },
         ],
     },
     {
         id: 5,
-        question: `Which landscape does this shield belong to? 5`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/bohuslans_vapen.png",
         response: [
             {
                 option: "Gastrikland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 6
             },
             {
                 option: "Vastmanland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 6
             },
             {
                 option: "Uppland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 6
             },
             {
                 option: "Bohuslan",
@@ -286,7 +286,7 @@ let scenarios = [
     },
     {
         id: 6,
-        question: `Which landscape does this shield belong to? 6`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/vastergotlands_vapen.png",
         response: [
             {
@@ -297,39 +297,39 @@ let scenarios = [
             {
                 option: "Vastmanland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 7
             },
             {
                 option: "Uppland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 7
             },
             {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 7
             },
         ],
     },
     {
         id: 7,
-        question: `Which landscape does this shield belong to? 7`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/vasterbottens_vapen.png",
         response: [
             {
                 option: "Gastrikland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 8
             },
             {
                 option: "Vastmanland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 8
             },
             {
                 option: "Uppland",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 8
             },
             {
                 option: "Vasterbotten",
@@ -340,105 +340,109 @@ let scenarios = [
     },
     {
         id: 8,
-        question: `Which landscape does this shield belong to? 8`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/sodermanlands_vapen.png",
         response: [
+            {
+                option: "Gotland",
+                outcome: 'lose',
+                getTo: 9
+            },
+            {
+                option: "Skane",
+                outcome: 'lose',
+                getTo: 9
+            },
             {
                 option: "Sodermanland",
                 outcome: 'score',
                 getTo: 9
             },
             {
-                option: "Gotland",
-                outcome: 'lose',
-                getTo: 1
-            },
-            {
-                option: "Uppland",
-                outcome: 'lose',
-                getTo: 1
-            },
-            {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: 1
+                getTo: 9
             },
         ],
     },
     {
         id: 9,
-        question: `Which landscape does this shield belong to? 9`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/smalands_vapen.png",
         response: [
             {
                 option: "Gastrikland",
                 outcome: 'lose',
-                getTo: 2
+                getTo: 10
             },
             {
                 option: "Vastmanland",
                 outcome: 'lose',
-                getTo: 3
+                getTo: 10
             },
             {
                 option: "Uppland",
                 outcome: 'lose',
-                getTo: 2
+                getTo: 10
             },
             {
                 option: "Smaland",
                 outcome: 'score',
-                getTo: 3
+                getTo: 10
             },
         ],
     },
     {
         id: 10,
-        question: `Which landscape does this shield belong to? 10`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/skane_landskapsvapen.png",
         response: [
             {
                 option: "Gastrikland",
                 outcome: 'lose',
-                getTo: 2
+                getTo: 11
             },
             {
                 option: "Skane",
                 outcome: 'score',
-                getTo: 3
+                getTo: 11
             },
             {
                 option: "Medlepad",
                 outcome: 'lose',
-                getTo: 2
+                getTo: 11
             },
             {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: 3
+                getTo: 11
             },
         ],
     },
     {
         id: 11,
-        question: `Which landscape does this shield belong to? 11`,
+        question: `Which landscape does this shield belong to?`,
         background: "assets/images/ostergotland_vapen.png",
         response: [
             {
-                option: "Gastrikland",
-                getTo: 2
+                option: "Ostergotland",
+                outcome: 'score',
+                getTo: 12
             },
             {
-                option: "Vastmanland",
-                getTo: 3
+                option: "Dalsland",
+                outcome: 'lose',
+                getTo: 12
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 12
             },
             {
-                option: "Norrbotten",
-                getTo: 3
+                option: "Smaland",
+                outcome: 'lose',
+                getTo: 12
             },
         ],
     },
@@ -449,19 +453,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 13
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 13
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'score',
+                getTo: 13
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 13
             },
         ],
     },
@@ -472,19 +480,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 14
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'score',
+                getTo: 14
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 14
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 14
             },
         ],
     },
@@ -495,19 +507,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 15
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 15
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 15
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'score',
+                getTo: 15
             },
         ],
     },
@@ -518,19 +534,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 16
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 16
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 16
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'score',
+                getTo: 16
             },
         ],
     },
@@ -541,19 +561,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 17
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 17
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'score',
+                getTo: 17
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 17
             },
         ],
     },
@@ -564,19 +588,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'score',
+                getTo: 18
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 18
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 18
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 18
             },
         ],
     },
@@ -587,19 +615,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 19
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'score',
+                getTo: 19
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 19
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 19
             },
         ],
     },
@@ -610,19 +642,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 20
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'score',
+                getTo: 20
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 20
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 20
             },
         ],
     },
@@ -633,19 +669,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 21
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 21
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'score',
+                getTo: 21
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 21
             },
         ],
     },
@@ -656,19 +696,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 22
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 22
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 222
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'score',
+                getTo: 22
             },
         ],
     },
@@ -679,19 +723,23 @@ let scenarios = [
         response: [
             {
                 option: "Gastrikland",
-                getTo: 2
+                outcome: 'score',
+                getTo: 23
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 23
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 23
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 23
             },
         ],
     },
@@ -702,19 +750,23 @@ let scenarios = [
         response: [
             {
                 option: "Ändra",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 24
             },
             {
                 option: "Ändra",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 24
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'score',
+                getTo: 24
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 24
             },
         ],
     },
@@ -725,19 +777,23 @@ let scenarios = [
         response: [
             {
                 option: "Ändra",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 25
             },
             {
                 option: "Vastmanland",
-                getTo: 3
+                outcome: 'lose',
+                getTo: 25
             },
             {
                 option: "Uppland",
-                getTo: 2
+                outcome: 'lose',
+                getTo: 25
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'score',
+                getTo: 25
             },
         ],
     },
@@ -747,20 +803,24 @@ let scenarios = [
         background: "assets/images/medelpads_vapen.png",
         response: [
             {
-                option: "medelpad",
-                getTo: 2
+                option: "Sodermanland",
+                outcome: 'lose',
+                getTo: -1
             },
             {
-                option: "Ändra",
-                getTo: 3
+                option: "Medelpad",
+                outcome: 'score',
+                getTo: -1
             },
             {
-                option: "Ändra",
-                getTo: 2
+                option: "Blekinge",
+                outcome: 'lose',
+                getTo: -1
             },
             {
                 option: "Norrbotten",
-                getTo: 3
+                outcome: 'lose',
+                getTo: -1
             },
         ],
     },
