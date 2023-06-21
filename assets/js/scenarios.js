@@ -676,4 +676,4 @@ let scenarios = [
     },
 ];
 
-module.export { scenarios };
+export { scenarios };
