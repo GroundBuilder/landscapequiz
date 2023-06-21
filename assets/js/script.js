@@ -47,6 +47,7 @@ function displayQuiz (scenarioIndex) {
     if (oldImage) {
         oldImage.remove();
     }
+    let quizButtons = document.createElement('button');
 
     quizText.textContent = quiz.question;
 
