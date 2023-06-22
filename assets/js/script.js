@@ -28,17 +28,15 @@ function displayQuiz (scenarioIndex) {
     let quiz = scenarios.find(quiz => quiz.id === scenarioIndex);
     
     // Uppload quiz question.
-    quizText.textContent = quiz.question  // Fine 
+    quizText.textContent = quiz.question;  // Fine 
     while (bgImage.firstChild) {
-        bgImage.removeChild(bgImage.firstChild)
+        bgImage.removeChild(bgImage.firstChild);
     }
 
     while (quizButton.firstChild) {
-        quizButton.removeChild(quizButton.firstChild)
+        quizButton.removeChild(quizButton.firstChild);
     }
     
-
-    let quizButtons = document.createElement('button');
 
     bgImage.innerHTML += "<img id='delete_img' alt='quiz image' src=" + quiz.background + ">";
 
