@@ -67,11 +67,9 @@ a:link {
 }
 
 .text_container {
-    margin-top: 2hv;
     margin-bottom: 10px;
     font-size: 1.5rem;
     font-weight: bold;
-
 }
 
 /* --  Buttons -- */
@@ -92,7 +90,7 @@ a:link {
     color: black;
     border-radius: 5px;
     border: 5px solid;
-    border-color: #e8889d;
+    border-color: #e15271;
     padding: 15px;
     margin: 5px;
     font-size: 1em;
@@ -128,7 +126,7 @@ a:link {
 .start_quiz_btn {
     font-size: 25px;
     font-weight: bold;
-    color:#e8889d;
+    color: #e15271;
     padding: 10px 30px;
     border: none;
     background: #f6f6f6;
@@ -145,7 +143,7 @@ a:link {
     border: none;
     padding: 5px;
     color: black;
-    background-color: #e8889d;
+    background-color: #e15271;
 }
 
 footer nav ul li {
@@ -167,7 +165,7 @@ footer nav ul li {
 }
 
 #quiz_img {
-    background-color: #e8889d;
+    background-color: #e15271;
     width: 500px;
     height: 400px;
     object-fit: fill;
@@ -192,7 +190,7 @@ footer nav ul li {
 
 .quiz_rules_info span {
     font-weight: 900;
-    color: #e8889d;
+    color: #e15271;
 }
 
 .start_btn_quiz {
@@ -272,8 +270,7 @@ footer {
     }
 
     #quiz_info_box {
-        width: 100;
-        
+        width: 100px;
     }
 
     .btn {

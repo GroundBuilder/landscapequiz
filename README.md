@@ -33,7 +33,7 @@ Features include:
 - pop-up information of game rules
 - clear score result
 - start game button
-- Score tracker, increment score
+- Score tracker
 
 
 ### Structure
@@ -175,7 +175,7 @@ I played through the game myself repeatedly in search of errors and improvements
 | Quiz rules button    | Displays instructions on screen for how to play the game.                                         |  Yes  |
 | Reset score button   | When user clicks, it will reset the score to zero (0).                                            |  Yes  |
 | Score tally          |  Displays '0' if never played before or score was reset, and should display previous score so long as user hasn't cleared cache.   |  Yes     |
-| Scenario change      |  When user clicks an option, the scenario changes to the appropriate follow-up scenario.          |   No  | 
+| Scenario change      |  When user clicks an option, the scenario changes to the appropriate follow-up scenario.          |   Yes  | 
 
 
 ## Bugs
@@ -183,17 +183,17 @@ I played through the game myself repeatedly in search of errors and improvements
 ### Fixed / Solved
 
 - Image didn't come up in the beginning. change the source of the image, cause in the beginning the image was created in style.css, but then it was greated inside game.html page.
-- The quiz started at the same place everytime. So fixed a random number. And after that added +1 to math, cause the quiz id starts with 1.
+- Image did not disapear when a new image was showing, instead it piled down on the screen. Fix it whit correct innerHtml.
 
 ### Still existing
 
-- The `innerHTML` is building up more and more pictures. Not time to find where to place the `remove()` function.
+- None
 
 
 ## Deployment
 ***
 ### Version Control
-The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘landscapequiz’.
+The site was created using the Gitpod editor and pushed to github to the remote repository ‘landscapequiz’.
 
 The following git commands were used throughout development to push code to the remote repo:
 
@@ -236,7 +236,6 @@ The project will now of been cloned on your local machine for use.
 - [Youtube.1](https://www.youtube.com/watch?v=ykszkgydoG4&list=FLruW0TYzckk7aRMpw8_TgFg&index=1) To make random question.
 - [Youtube.2](https://www.youtube.com/watch?v=R1S_NhKkvGA) To make strukture of quiz.
 - [W3school](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_progressbar_3) To make a progress bar.
-- Increment
 
 How to creat Modals
 https://www.w3schools.com/howto/howto_css_modals.asp
