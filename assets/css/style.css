@@ -86,10 +86,31 @@ a:link {
     border-color: #e8889d;
     padding: 15px;
     margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+.btn_reset {
+    width: 100px;
+    height: 50px;
+    /* text-align: center; */
+    color: black;
+    border-radius: 5px;
+    border: 5px solid;
+    border-color: #e8889d;
+    font-size: 0.65em;
+    margin: 5px;
+    margin-top: 2vh;
 
 }
 
 .btn:hover {
+    background-color: #efbfc9;
+    color: black;
+}
+
+.btn_reset:hover {
     background-color: #efbfc9;
     color: black;
 }
