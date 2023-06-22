@@ -16,7 +16,7 @@ let bgImage = document.getElementById("delete_img");
 
 
 function runGame() {
-    displayQuiz(randQ);
+    displayQuiz(1);
     displayScores();
 
 }
@@ -40,7 +40,6 @@ function displayQuiz (scenarioIndex) {
 
     let quizButtons = document.createElement('button');
 
-    
     bgImage.innerHTML += "<img id='delete_img' alt='quiz image' src=" + quiz.background + ">";
 
     quiz.response.forEach(respond => {
@@ -65,6 +64,7 @@ function restartButton() {
     localStorage.setItem('losses', 0);
     
     displayScores();
+    runGame();
 }
 
 
@@ -90,10 +90,6 @@ function optionResponse(respond) {
         displayQuiz(respond.getTo);
     }
 }
-
-// https://www.youtube.com/watch?v=ykszkgydoG4&list=FLruW0TYzckk7aRMpw8_TgFg&index=1 idea to make random question.
-// -- Make the quiz generate a random number to wich queston to start with --
-let randQ = Math.floor(Math.random()*25 + 1);
 
 // -- Add score to storage
 function addWin() {

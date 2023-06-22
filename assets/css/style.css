@@ -33,15 +33,12 @@ a:link {
 .game_area_box {
     display: block;
     z-index: 1;
-    /*width: 450px;*/
     background: #f6f6f6;
     border-radius: 5px;
-    /*transition: all 0.3s ease-in;*/
 }
 
 .game_area_box {
     opacity: 0.8;
-    /*background-color: #efbfc9;*/
     margin-right: auto;
     margin-left: auto;
     width: 90%;
@@ -63,7 +60,6 @@ a:link {
     height: 70px;
     background: #f6f6f6;
     border-radius: 5px 5px 0 0;
-    /*display: flex;*/
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 3px 5px 1px black;
@@ -72,7 +68,6 @@ a:link {
 /* --  Buttons -- */
 
 .start_quiz_btn, .quiz_info_box, .game_area_box {
-    /*position: absolute;*/
     top: 50%;
     left: 50%;
     box-shadow: 0 5px 10px 0 black, 0 7px 20px 0 black;
@@ -129,7 +124,6 @@ footer nav ul li {
 /* -- Make the box active and dissapear -- */
 .quiz_info_box.activeInfo, .game_area_box.activeGame, .score_box.activeScroe {
     opacity: 1 ;
-    /*z-index: 5;*/
     pointer-events: auto; 
 }
 
@@ -154,7 +148,6 @@ footer nav ul li {
 .quiz_info_box .quiz_rules_info {
     height: 60px;
     border-bottom: 1px solid black;
-    /*display: flex;*/
     align-items: center;
     padding: 0 30px;
     border-radius: 5px 5px 0 0 ;
@@ -173,7 +166,6 @@ footer nav ul li {
 
 .start_btn_quiz {
     height: 50px;
-    /*display: flex;*/
     justify-content: flex-end;
     padding: 0 30px;
     border-top: 1px solid black;

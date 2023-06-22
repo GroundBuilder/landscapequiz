@@ -655,22 +655,34 @@ let scenarios = [
             {
                 option: "Sodermanland",
                 outcome: 'lose',
-                getTo: -1
+                getTo: 26
             },
             {
                 option: "Medelpad",
                 outcome: 'score',
-                getTo: -1
+                getTo: 26
             },
             {
                 option: "Blekinge",
                 outcome: 'lose',
-                getTo: -1
+                getTo: 26
             },
             {
                 option: "Norrbotten",
                 outcome: 'lose',
-                getTo: -1
+                getTo: 26
+            },
+        ],
+    },
+    {
+        id: 26,
+        question: `Now you have reach the end, start over by press Reset button, or do it agin and add points to your score.`,
+        background: "assets/images/theend.jpg",
+        response: [
+            {
+                option: "Add a new round!",
+                outcome: null,
+                getTo: 1
             },
         ],
     },
