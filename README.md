@@ -30,9 +30,9 @@ Making it apear as a simpel quiz game, it will make this game more fun, and whan
 The aim of this project was to use vanilla JavaScript and creat a image-base quiz. I decided to go ahead with a imgae-based quiz with random image of province shields of Sweden.
 
 Features include:
-- pop-up information of game rules
-- clear score result
-- start game button
+- Pop-up information of game rules
+- Clear score result, and game start over agian.
+- Start game button
 - Score tracker
 
 
@@ -70,7 +70,7 @@ Colors
 ![Start](docs/readme_images/start_site_quiz.png)
 
 - User get a quiz image.
-    - Featur: The quiz image is random selected.
+    - Featur: The quiz image is fixed selected.
 
 ![Game](docs/readme_images/quiz_game.png)
 
