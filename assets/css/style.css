@@ -1,7 +1,6 @@
 body {
     background: #f6f6f6;
     text-align: center;
-
 }
 
 a:link { 
@@ -144,6 +143,11 @@ a:link {
     padding: 5px;
     color: black;
     background-color: #e15271;
+}
+
+footer {
+    display: grid
+    flex-direction: column;
 }
 
 footer nav ul li {
